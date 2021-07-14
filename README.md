@@ -7,8 +7,6 @@
 ## RDD(Resilient Distributed Dataset)
 
 
-
-
 ## Zeppelin
 
 https://zeppelin.apache.org/download.html download
@@ -22,3 +20,7 @@ bin/zeppelin-daemon.sh start
 ~~~
 bin/zeppelin-daemon.sh stop
 ~~~
+
+
+### References
+- Apache Spark로 시작하는 머신러닝 입문 : https://youtu.be/PRLz11vv7VA
