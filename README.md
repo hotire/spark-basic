@@ -4,6 +4,11 @@
 - git : https://github.com/apache/spark
 
 
+## RDD(Resilient Distributed Dataset)
+
+
+
+
 ## Zeppelin
 
 https://zeppelin.apache.org/download.html download
