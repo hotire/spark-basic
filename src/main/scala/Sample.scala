@@ -23,6 +23,9 @@ object Sample {
       schema
     )
 
+    df.select("number").show()
+    df.select("word").show()
+
     println(s"count: ${df.count()}")
 
     spark.stop()
