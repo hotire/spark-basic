@@ -26,6 +26,11 @@ object Sample {
     df.select("number").show()
     df.select("word").show()
 
+    df.coalesce(1)
+      .write
+      .option("header", "true")
+      .csv("temp/teenagers.csv")
+
     println(s"count: ${df.count()}")
 
     spark.stop()
