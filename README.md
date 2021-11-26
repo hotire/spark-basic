@@ -43,6 +43,9 @@ reduceByKey 는 동일한 Key 를 가지고 있는, 모든 record 값을 취합�
 
 
 
+## API 
+
+- https://team-platform.tistory.com/50
 
 
 ## SBT Simple Build Tool
@@ -71,6 +74,26 @@ bin/zeppelin-daemon.sh start
 ~~~
 bin/zeppelin-daemon.sh stop
 ~~~
+
+
+## Hadoop
+
+### ViewFs
+
+viewfs.ViewFileSystem
+
+다른 Hadoop FileSystem을 위한 Client mount table
+
+- https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/ViewFs.html
+
+### hdfs
+
+hdfs.DistributedFileSystem
+
+HDFS
+
+
+
 
 
 ### References
