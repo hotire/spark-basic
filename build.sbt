@@ -23,6 +23,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-repl" % sparkVersion,
   "org.apache.spark" %% "spark-yarn" % sparkVersion,
   "org.apache.spark" %% "spark-hive" % hiveVersion,
+  "com.amazonaws" % "aws-java-sdk" % "1.12.119"
 )
 
 assemblyMergeStrategy in assembly := {
