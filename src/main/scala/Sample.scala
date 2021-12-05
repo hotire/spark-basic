@@ -1,3 +1,4 @@
+import org.apache.spark.sql.functions.regexp_replace
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
 import org.apache.spark.sql.{Row, SparkSession}
 
@@ -26,7 +27,11 @@ object Sample {
     df.select("number").show()
     df.select("word").show()
 
-    df.coalesce(1)
+    import spark.implicits._
+
+    df
+      .withColumn("text", regexp_replace($"number", "ll", "LL"))
+      .coalesce(1)
       .write
       .option("header", "true")
       .csv("temp/teenagers.csv")
