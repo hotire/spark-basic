@@ -29,8 +29,11 @@ object Sample {
 
     import spark.implicits._
 
-    df
-      .withColumn("text", regexp_replace($"number", "ll", "LL"))
+    val dfWithText = df.withColumn("text", regexp_replace($"number", "ll", "LL"))
+
+    dfWithText.printSchema()
+
+    dfWithText
       .coalesce(1)
       .write
       .option("header", "true")
